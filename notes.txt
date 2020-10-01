@@ -1,0 +1,8 @@
+> issue with serial number dropdown box on add kit page
+	list of choices does not update when new machine is added, requires server reset to update
+> implement sub html for machine and kit postings on home page
+> implement bootstrap
+> delete/edit functionality
+> create a 'machine page', similar to the user page in microblog tutorial
+	displays all machine data, including all related kits
+> home page has <title> in the tab??

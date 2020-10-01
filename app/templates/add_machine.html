@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+    <h1>Add Machine</h1>
+    <form action="" method="post" novalidate>
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.project.label }}<br>
+            {{ form.project(size=32) }}
+        </p>
+        <p>
+            {{ form.serialnum.label }}<br>
+            {{ form.serialnum(size=32) }}
+        </p>
+        <p>
+            {{ form.customer.label }}<br>
+            {{ form.customer(size=32) }}
+        </p>
+        <p>
+            {{ form.description.label }}<br>
+            {{ form.description(size=32) }}
+        </p>
+        <p>{{ form.submit() }}</p>
+    </form>
+{% endblock %}

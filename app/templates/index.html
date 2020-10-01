@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Machines</h1>
+    <hr>
+    {% for machine in machines %}
+        {% include '_data_machine.html' %}
+    {% endfor %}
+{% endblock %}

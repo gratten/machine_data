@@ -38,6 +38,7 @@ def add_kit():
         kit = Kit(project=form.project.data,
                   serialnum=form.serialnum.data,
                   customer=form.customer.data,
+                  speed=form.speed.data,
                   width=form.width.data,
                   length=form.length.data,
                   depth=form.depth.data)
@@ -46,3 +47,8 @@ def add_kit():
         flash('Kit added')
         return redirect(url_for('index'))
     return render_template('add_kit.html', title='Add Kit', form=form)
+
+@app.route('/machine/<serialnum>')
+def machine(serialnum):
+    machine = Machine.query.filter_by(serialnum=serialnum).first_or_404()
+    return render_template('machine.html', machine=machine)

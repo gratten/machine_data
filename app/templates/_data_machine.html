@@ -1,7 +1,10 @@
 <table class="table table-hover">
-    <tr valign="top">
-        <b>{{ machine.project }} -
-        {{ machine.serialnum }} -
-        {{ machine.customer }}</b>
+    <tr>
+        <td>
+            <a href="{{ url_for('machine', serialnum=machine.serialnum) }}">
+            <b>{{ machine.project }} -
+            {{ machine.serialnum }} -
+            {{ machine.customer }}</b>
+        </td>
     </tr>
 </table>

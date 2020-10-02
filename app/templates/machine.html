@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>{{ machine.serialnum }}</h1>
+    <p>
+        <b>
+        {{ machine.project }}
+        {{ machine.customer }}
+        </b>
+    </p>
+    <p>
+        {{ machine.description }}
+    </p>
+    {% if machine.kits.all() %}
+        <table style="width:100%">
+          <tr>
+            <th>Project</th>
+            <th>Size</th>
+            <th>Speed</th>
+          </tr>
+          <tr>
+        {% for kit in machine.kits.all() %}
+            {% include '_data_kit.html' %}
+        {% endfor %}
+          </tr>
+        </table>
+    {% endif %}
+</body>
+</html>
+    </p>
+
+{% endblock %}

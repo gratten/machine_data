@@ -6,3 +6,18 @@
 > create a 'machine page', similar to the user page in microblog tutorial
 	displays all machine data, including all related kits
 > home page has <title> in the tab??
+> explore options for importing existing data (spreadsheets)
+> pagination
+> what will multiple machine support look like?
+    hard coded list of existing machines
+    logic to build serial numbers
+> search functionality
+
+
+Benefits of web app over traditional method (spreadsheet log)
+> cleaner, simpler to update
+> able to introduce logic to manage/restrict user input, resulting in cleaner and more uniform data
+> database advantages
+    can be tied to/feed/logically operate with other databases (agile, dbworks, etc)
+> central repository of data
+    logins can be implemented, allowing read only access to the entire site

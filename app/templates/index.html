@@ -5,8 +5,5 @@
     <hr>
     {% for machine in machines %}
         {% include '_data_machine.html' %}
-        {% for kit in machine.kits.all() %}
-            {% include '_data_kit.html' %}
-        {% endfor %}
     {% endfor %}
 {% endblock %}

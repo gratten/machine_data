@@ -3,8 +3,11 @@ from wtforms import StringField, SubmitField, SelectField,IntegerField, DecimalF
 from wtforms.validators import DataRequired
 from app.models import Machine
 
+product_lines = ['Enterprise', 'MEC', 'ACE']
+
 class AddMachineForm(FlaskForm):
     project = StringField('Project', validators=[DataRequired()])
+    prodline = SelectField('Product Line', choices=product_lines, validators=[DataRequired()])
     serialnum = StringField('Serial Number', validators=[DataRequired()])
     customer = StringField('Customer', validators=[DataRequired()])
     description = StringField('Description', validators=[DataRequired()])

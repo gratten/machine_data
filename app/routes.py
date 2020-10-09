@@ -15,6 +15,7 @@ def add_machine():
     form = AddMachineForm()
     if form.validate_on_submit():
         machine = Machine(project=form.project.data,
+                          prodline=form.prodline.data,
                           serialnum=form.serialnum.data,
                           customer=form.customer.data,
                           description=form.description.data)

@@ -1,0 +1,43 @@
+Bare-bones web application for tracking machine serial numbers and kits
+
+Immediate benefits
+- simpler interface for updating machine data
+- cleaner and more uniform data, dictated by application logic
+- central repository for all machine data, accessible site-wide
+	> logins can differentiate write and read-only capabilities
+- can relatively easily import data from existing spread sheets
+
+Future goals
+- tie to electronic CDR process
+	> logging and approving carton size data within application could replace emailing word documents back and forth
+	> engineering approval check box could be implemented to replace signatures
+- database advantages over spreadsheets
+	> databases can by queried and linked to other databases, ideally read and write (agile, dbworks, everntually SAP and other CDM system)
+	> automated template creation for standard 'field kits' and custom fits BOMS
+		> for example, generate part numbers for the gate assembly and gate plate, populate descriptions according to data, then build the BOM in Agile
+		> the goal is to minimize data-entry, copy-paste, etc
+- machine cookbook
+	> central repository for all options for a machine, ideally modularized
+	> could eventually tie to existing Agile boms (read-only access to Agile database) allowing user to link modules together to create a machine
+	> logic could be implemented to ensure that only corresponding modules are allowed
+	
+Proposed path
+- features left to implement
+	> search box
+	> multiple product line support (new data field on add machine page)
+	> serial number building functionality (would require list of options for machines)
+	> pagination
+	> user logins
+	> delete functionality
+- trail period with Enterprise and MEC?
+	
+IT support requirements
+- proxy information so that github can be used directly onsite
+- deployment strategy? deploy on intranet? cloud deployment?
+
+Other notes
+- location of formal project proposal document, for this and data cleansing/Agile import tool
+- other possible applications
+	> sales order and PC sheet generation - seems mostly copy-paste at the moment
+	> engineering time management
+	

@@ -21,6 +21,7 @@
         leads to cleaner and more uniform data flowing into Agile
 > field in kit table with boolean to indicate if the kit is original to the machine, or field kit?
 > 'add kit' button on specific machine page, auto-populates customer and project in kit table
+> can you import a kit with a serial numer that doesn't yet exist? is this a problem if you can?
 
 known bugs
 > the bit in forms.py to generate serial number list has to be commented out to migrate a new column to the machine table

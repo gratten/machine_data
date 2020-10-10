@@ -44,7 +44,7 @@ def import_kits(file):
         new_entry = Kit(project=entry_list[num][0],
                             serialnum=entry_list[num][1],
                             customer=entry_list[num][2],
-                            speed=entry_list[num][3],
+                            # speed=entry_list[num][3],
                             length=entry_list[num][4],
                             width=entry_list[num][5],
                             depth=entry_list[num][6])

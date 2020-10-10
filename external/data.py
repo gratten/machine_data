@@ -24,11 +24,29 @@ def import_machines(file):
         db.session.add(new_entry)
     db.session.commit()
 
-
 # bulk import to kit table, input specifies csv file
 def import_kits(file):
-    print('importing kit data...')
+    from app.models import Kit
+    from app import db
+    import os
 
+    os.chdir('C:\\Users\\WDG1DCR\\Desktop\\my_projects\\web\\machine_data\\external')
+    print('importing kit data...')
+    entry_list = []
+    with open(file, newline='') as csvfile:
+        for row in csvfile:
+            entry = (row.split(';'))
+            entry_list.append(entry)
+    for num in range(len(entry_list)):
+        new_entry = Kit(project=entry_list[num][0],
+                            serialnum=entry_list[num][1],
+                            customer=entry_list[num][2],
+                            speed=entry_list[num][3],
+                            length=entry_list[num][4],
+                            width=entry_list[num][5],
+                            depth=entry_list[num][6])
+        db.session.add(new_entry)
+    db.session.commit()
 
 # delete everything from database
 def nuke():

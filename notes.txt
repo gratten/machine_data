@@ -20,13 +20,14 @@
         part number generation? maybe the tool can be assigned its own block of SAP numbers?
         leads to cleaner and more uniform data flowing into Agile
 > field in kit table with boolean to indicate if the kit is original to the machine, or field kit?
+> 'add kit' button on specific machine page, auto-populates customer and project in kit table
 
 known bugs
 > the bit in forms.py to generate serial number list has to be commented out to migrate a new column to the machine table
     likely something to do with machines.query.all() command
 > issue with serial number dropdown box on add kit page
 	list of choices does not update when new machine is added, requires server reset to update
-
+l
 Benefits of web app over traditional method (spreadsheet log)
 > cleaner, simpler to update
 > able to introduce logic to manage/restrict user input, resulting in cleaner and more uniform data

@@ -5,7 +5,10 @@ def import_machines(file):
     from app import db
     import os
 
-    os.chdir('C:\\Users\\WDG1DCR\\Desktop\\my_projects\\web\\machine_data\\external')
+    # work comp
+    # os.chdir('C:\\Users\\WDG1DCR\\Desktop\\my_projects\\web\\machine_data\\external')
+    #  home comp
+    os.chdir('C:\\Users\\gratten\\Documents\\python\\projects\\machine_data\\external')
     print('importing machine data...')
     entry_list = []
     with open(file, newline='') as csvfile:

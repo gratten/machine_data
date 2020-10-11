@@ -22,6 +22,7 @@
 > field in kit table with boolean to indicate if the kit is original to the machine, or field kit?
 > 'add kit' button on specific machine page, auto-populates customer and project in kit table
 > can you import a kit with a serial numer that doesn't yet exist? is this a problem if you can?
+> add fucntion 'decypher(garbage)' to manage converting carton sizes to clean lists of floats
 
 known bugs
 > the bit in forms.py to generate serial number list has to be commented out to migrate a new column to the machine table
